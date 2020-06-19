@@ -1,6 +1,6 @@
 ## Set Up
 
-In order to run the production code, the following environment files and settings are necessary:
+In order to run the production code, the following environment files and settings must first be created:
 
 _.env.prod_
 
@@ -43,7 +43,7 @@ Bring down the containers:
 
 ## Background
 
-Architecture based on [Dockerizing a Python Django Web Application](https://testdriven.io/blog/dockerizing-django-with-postgres-gunicorn-and-nginx/). However, the initial step of installing Django and creating a new project was done using a docker container running the correct version of python:
+Architecture based on [Dockerizing a Python Django Web Application](https://testdriven.io/blog/dockerizing-django-with-postgres-gunicorn-and-nginx/). However, the initial step of installing Django and creating a new project was done using a docker container with python:
 
     /app $ docker run -it -v `pwd`:/usr/src/app python:3.8.3-alpine ash .
     / # pip install django==3.0.7
