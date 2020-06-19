@@ -43,7 +43,7 @@ Bring down the containers:
 
 ## Background
 
-Architecture based on [Dockerizing a Python Django Web Application](https://semaphoreci.com/community/tutorials/dockerizing-a-python-django-web-application). However, the initial step of installing Django and creating a new project was done using a docker container running the correct version of python:
+Architecture based on [Dockerizing a Python Django Web Application](https://testdriven.io/blog/dockerizing-django-with-postgres-gunicorn-and-nginx/). However, the initial step of installing Django and creating a new project was done using a docker container running the correct version of python:
 
     /app $ docker run -it -v `pwd`:/usr/src/app python:3.8.3-alpine ash .
     / # pip install django==3.0.7
