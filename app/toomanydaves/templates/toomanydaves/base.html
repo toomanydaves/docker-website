@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block page-title %}Too Many Daves{% endblock %}</title>
+        {% block page-styles %}{% endblock %}
+        {% block page-scripts %}{% endblock %}
+    </head>
+    <body>
+        <div
+            id="bg"
+            style="
+                position: fixed;
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+            "
+        >{% block bg %}{% endblock %}</div>
+        <div id="content">{% block content %}{% endblock %}</div>
+        <div id="footer">{% block footer %}{% endblock %}</div>
+    </body>
+</html>
